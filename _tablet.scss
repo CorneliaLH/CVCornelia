@@ -1,0 +1,190 @@
+// //navbar
+// .nav {
+//   &__list {
+//     .nav__item {
+//       .nav__link {
+//         font-size: 1.5rem;
+//         transition: text-decoration 0.3s ease-in-out;
+//       }
+
+//       &:hover {
+//         .nav__link {
+//           text-decoration: underline;
+//         }
+//       }
+//     }
+//   }
+// }
+
+// //stäng-kryss
+
+// .menu {
+//   .menu__burger--close {
+//     margin-left: -5px;
+//     padding-left: 10px;
+//     padding-bottom: 10px;
+//   }
+// }
+// // kort med info om Cornelia
+
+.card {
+  flex-direction: row;
+  justify-content: space-evenly;
+  height: 100vh;
+
+  &__contentLeft {
+    flex-basis: 48%;
+    justify-content: space-between;
+
+    .card__title {
+      font-size: 3.7vw;
+      padding: 0 0 0 40px;
+    }
+    .card__list {
+      flex-basis: 48%;
+    }
+  }
+
+  &__contentRight {
+    flex-basis: 50%;
+    padding: 0;
+
+    .card__img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+// //generella selektorer som är på flera element
+
+// .header2 {
+//   font-size: 2.5vw;
+// }
+
+// .header3 {
+//   font-size: 2vw;
+// }
+
+// .list-item {
+//   font-size: 1rem;
+// }
+
+// // page 2
+
+// .container__page2 {
+//   box-sizing: border-box;
+//   height: 100%;
+// }
+
+// //animation
+
+// .flip {
+//   font-size: 3rem;
+// }
+
+// // bakgrund
+
+// .section-background {
+//   .container__background {
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: space-between;
+//     max-width: 760px;
+//     min-width: 760px;
+
+//     .background-container__left {
+//       flex-basis: 45%;
+
+//       .article-background {
+//         #article-background__text {
+//           font-size: 1.3rem;
+//         }
+//       }
+//     }
+
+//     .background-container__right {
+//       flex-basis: 45%;
+//     }
+//   }
+// }
+
+// // arbetslivserfarenhet och utbildning
+
+// .section-work,
+// .section-education {
+//   padding: 0;
+
+//   .container__work,
+//   .container__education {
+//     max-width: 760px;
+//     min-width: 760px;
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: center;
+
+//     .work__title,
+//     .education__title {
+//       flex-basis: 50%;
+//       padding: 20px;
+//     }
+//     .work__container,
+//     .education__container {
+//       flex-basis: 50%;
+//       padding: 20px;
+//     }
+//   }
+// }
+
+// // länk portfolio
+
+// .aside__portfolio {
+//   .link__portfolio {
+//     font-size: 3rem;
+//   }
+// }
+
+// // quote-banner
+
+// .banner-quote {
+//   .banner__text--stretch {
+//     font-size: 1.5vw;
+//   }
+//   .banner__footer--stretch {
+//     font-size: 1.5vw;
+//   }
+// }
+
+// //footer
+
+// .footer-container1 {
+//   .footer-container2 {
+//     display: flex;
+//     flex-direction: row;
+//     width: 100%;
+//     justify-content: space-evenly;
+//     max-width: 760px;
+//     min-width: 760px;
+
+//     .footer__socials {
+//       padding-top: 20px;
+//       flex-basis: 45%;
+//     }
+
+//     .footer__contact {
+//       padding-top: 20px;
+//       flex-basis: 45%;
+//       font-family: $font;
+
+//       .contact__list {
+//         .list-item {
+//           padding: 10px;
+
+//           .contact__links {
+//             color: $color-text-dark;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }

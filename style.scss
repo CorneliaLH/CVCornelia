@@ -1,0 +1,23 @@
+
+// Struktur SASS:
+// style.scss - importerar övriga stylesheets + media queries
+//     -normalize.scss - css resets
+//     -base.scss- generell stylesheet
+//     -tablet.scss- för tablet (över 768px)
+//     -desktop.scss- för desktop (över 1024px) 
+//     -variables.scss- variabler
+
+@import './normalize'; 
+@import './variables';
+@import './base';
+
+@media screen and (min-width: 768px) {
+    
+    @import './tablet'; 
+}
+
+@media screen and (min-width: 1024px) {
+    
+    @import './desktop'; 
+}
+

@@ -1,0 +1,572 @@
+// öppna-hamburgare
+body {
+  height: 200vh;
+  border: 60px solid white;
+  background-image: $color-background-dark;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left center;
+  background-attachment: local;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  z-index: 999;
+
+  .menu__burger {
+    width: 50px;
+    height: 6px;
+    background-color: #557848;
+    border-radius: 5px;
+    transition: all 0.05s ease-in-out;
+
+    &:before {
+      content: "";
+      position: absolute;
+      width: 50px;
+      height: 6px;
+      background: #557848;
+      border-radius: 5px;
+      transition: all 0.5s ease-in-out;
+      transform: translateY(-16px);
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      width: 50px;
+      height: 6px;
+      background: #557848;
+      border-radius: 3px;
+      transition: all 0.5s ease-in-out;
+      transform: translateY(16px);
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.menu.open .menu__burger {
+  transform: translateX(-50px);
+  background: transparent;
+  box-shadow: none;
+}
+
+.menu.open .menu__burger::before {
+  transform: rotate(45deg) translate(35px, -35px);
+}
+
+.menu.open .menu__burger::after {
+  transform: rotate(-45deg) translate(35px, 35px);
+}
+.nav {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #557848f5;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 100vh;
+
+  .nav__list {
+    margin: 0;
+    height: 100%;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    .nav__item {
+      font-size: 1.5rem;
+      .nav__link {
+        color: white;
+        text-decoration: none;
+      }
+    }
+  }
+  display: none;
+}
+
+// kort med info om Cornelia
+
+.card {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  //   background-image: linear-gradient(
+  //       rgba(255, 255, 255, 0.7),
+  //       rgba(255, 255, 255, 0.7)
+  //     ),
+  //     url(../img/winterlandscape.jpg);
+  //   background-repeat: no-repeat;
+  //   background-size: cover;
+  //   background-position: left center;
+  //   background-attachment: local;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 0;
+}
+
+.card__contentLeft {
+  display: flex;
+  flex-basis: 100%;
+
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px;
+  max-height: 350px;
+
+  .card__title {
+    font-family: $font;
+    font-weight: 600;
+    font-size: 6.3vw;
+    margin-right: 10px;
+    margin-left: 10px;
+    color: #557848;
+    text-shadow: 1px 1px 2px white, 0 0 1em white, 0 0 0.2em white;
+  }
+
+  .cardBtnMail {
+    position: relative;
+    background-color: #557848;
+    padding: 10px 10px 10px 10px;
+    cursor: pointer;
+    z-index: 0;
+    border-radius: 10%;
+    box-shadow: 2px 2px 2px $color-text-dark;
+    color: $color-text-light;
+    font-family: $font;
+    font-weight: 600;
+    text-decoration: none;
+
+    &:focus {
+      outline: $color-focus-outline;
+      box-shadow: 5px 5px 10px $box-shadow;
+      &:active {
+        background: $color-active;
+        color: $color-active-font;
+      }
+    }
+
+    .card__buttonFont {
+      position: absolute;
+      opacity: 0;
+      font-size: 2rem;
+      color: $color-text-light;
+      top: 5px;
+      left: 30px;
+    }
+  }
+
+  .card__list {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+
+    .card__item {
+      width: 70px;
+      list-style-type: none;
+
+      .card__link {
+        text-align: center;
+        display: block;
+        width: 100%;
+        font-size: 1rem;
+        color: $color-text-light;
+        font-family: $font;
+
+        &:focus {
+          outline: $color-focus-outline;
+          box-shadow: 5px 5px 10px $box-shadow;
+        }
+        &:active {
+          background: $color-active;
+        }
+      }
+    }
+  }
+}
+
+// // foto på Cornelia
+
+// .card__content--right {
+//   display: flex;
+//   flex-basis: 100%;
+//   justify-content: center;
+//   align-items: center;
+//   padding-bottom: 50px;
+//   height: auto;
+
+//   .card__img {
+//     box-shadow: 5px 5px 5px #557848;
+//     max-width: 220px;
+//     height: auto;
+//   }
+// }
+
+// // generella selektorer som är på flera element
+
+// .header2 {
+//   font-family: $font;
+//   font-weight: 600;
+//   font-size: 5vw;
+//   color: $color-text-dark;
+// }
+
+// .header3 {
+//   font-family: $font;
+//   font-weight: 400;
+//   font-style: italic;
+//   font-size: 4vw;
+//   color: $color-text-dark;
+// }
+
+// .list-item {
+//   font-family: $font;
+//   font-weight: 400;
+//   font-size: 0.9rem;
+//   color: $color-text-dark;
+//   padding: 10px;
+// }
+
+// // sida 2
+
+// .container__page2 {
+//   box-sizing: border-box;
+//   height: 100%;
+//   //   background-image: $color-background-dark;
+//   //   background-repeat: no-repeat;
+//   //   background-size: cover;
+//   //   background-position: left center;
+//   //   background-attachment: local;
+// }
+
+// // animation med font awesome iconer
+
+// .animation__fontawesome {
+//   width: 100%;
+//   padding-top: 10px;
+//   padding-bottom: 10px;
+//   height: 4%;
+//   overflow: hidden;
+
+//   .animation__container {
+//     display: flex;
+//     flex-direction: row;
+//     align-items: center;
+//     justify-content: space-between;
+//     padding-left: 30px;
+//     padding-right: 30px;
+
+//     .icon__fontawesome {
+//       margin-left: 0;
+
+//       .flip {
+//         animation: flip 2s infinite;
+//         color: $color-menu;
+//         padding-right: 5px;
+//         text-shadow: 2px 2px 2px black;
+//         font-size: 2rem;
+//       }
+//     }
+//   }
+// }
+
+// @keyframes flip {
+//   from {
+//     transform: rotateY(0deg);
+//   }
+//   to {
+//     transform: rotateY(360deg);
+//   }
+// }
+
+// // bakgrund
+
+// .section-background {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   flex-basis: 90%;
+//   padding: 20px;
+
+//   .container__background {
+//     max-width: 500px;
+//     height: 100%;
+//     background-color: $color-background;
+//     opacity: 0.7;
+//     border-radius: 5px;
+
+//     .background-container__left {
+//       flex-basis: 90%;
+//       max-width: 500px;
+//       padding: 20px;
+//       height: auto;
+
+//       .article-background {
+//         display: flex;
+//         flex-direction: column;
+//         align-items: start;
+//         justify-content: center;
+
+//         .article-background__text {
+//           font-family: $font;
+//           font-weight: 300;
+//           font-size: 0.9rem;
+//           color: $color-text-dark;
+//           flex-basis: 70%;
+//         }
+//       }
+//     }
+
+//     .background-container__right {
+//       flex-basis: 90%;
+//       max-width: 500px;
+//       padding: 20px;
+//       height: auto;
+
+//       .article-skills {
+//         display: flex;
+//         flex-direction: column;
+//         align-items: start;
+//         justify-content: start;
+
+//         .article-skills__list {
+//           padding: 0;
+//           list-style-type: none;
+//         }
+//       }
+//     }
+//   }
+// }
+
+// // arbetslivserfarenhet och utbildning
+
+// .section-work,
+// .section-education {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+//   flex-basis: 90%;
+//   padding: 20px;
+//   margin-bottom: 20px;
+
+//   .container__work,
+//   .container__education {
+//     max-width: 500px;
+//     background-color: $color-background;
+//     opacity: 0.7;
+//     border-radius: 5px;
+
+//     .work__title,
+//     .education__title {
+//       margin: 0;
+//       padding: 5px;
+//       max-width: 500px;
+//       align-self: start;
+//       padding-bottom: 10px;
+//     }
+
+//     .work__container,
+//     .education__container {
+//       max-width: 500px;
+//       padding: 5px;
+//     }
+//   }
+// }
+
+// // länk till portfolio (senare ska det vara nån typ av karusell eller annat kul sätt att visa fram portfolion.)
+
+// .aside__portfolio {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   height: 12vh;
+//   padding-bottom: 20px;
+
+//   .link__portfolio {
+//     width: 70%;
+//     text-align: center;
+//     font-family: $font;
+//     font-weight: 600;
+//     letter-spacing: 0.7rem;
+//     font-size: 8vw;
+//     color: $color-menu;
+//     text-shadow: 3px 3px 3px $color-text-dark;
+
+//     &:focus {
+//       outline: $color-focus-outline;
+//       box-shadow: 5px 5px 10px $box-shadow;
+//     }
+//     &:active {
+//       background: $color-active;
+//       color: $color-active-font;
+//     }
+//     .arrow {
+//       opacity: 0;
+//     }
+//   }
+// }
+
+// // quote med banner och animation
+
+// .banner-quote {
+//   display: flex;
+//   height: auto;
+//   flex-direction: column;
+//   background-color: #557848;
+//   justify-content: center;
+//   align-items: center;
+//   cursor: pointer;
+//   line-height: 1.5rem;
+//   padding: 30px;
+//   margin: 0;
+//   animation: letterstretch 15s infinite alternate;
+
+//   .banner__text--stretch {
+//     padding: 0;
+//     margin: 0;
+//     font-size: 3vw;
+//     color: $color-text-light;
+//     font-family: $font;
+//     font-style: italic;
+//     font-weight: 400;
+//     text-shadow: 1px 1px 1px black;
+//   }
+//   .banner__footer--stretch {
+//     padding-top: 20px;
+//     text-align: right;
+//     font-size: 3vw;
+//     color: white;
+//     font-family: $font;
+//     font-style: italic;
+//     text-shadow: 1px 1px 1px black;
+//   }
+// }
+
+// @keyframes letterstretch {
+//   from {
+//     letter-spacing: initial;
+//   }
+//   to {
+//     letter-spacing: 1vw;
+//   }
+// }
+
+// // footer med sociala medier och kontakt
+
+// .footer-container1 {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+//   padding: 20px;
+//   //   background-image: $color-background-dark;
+//   overflow: hidden;
+
+//   .footer-container2 {
+//     display: flex;
+//     flex-direction: column;
+//     background-color: $color-background;
+//     opacity: 0.7;
+//     border-radius: 5px;
+//     padding-left: 30px;
+//     padding-right: 30px;
+
+//     .footer__socials {
+//       .socials__text {
+//         color: $color-text-dark;
+//       }
+
+//       .socials__list {
+//         list-style-type: none;
+
+//         li {
+//           width: 60px;
+//           height: 60px;
+//           display: flex;
+//           justify-content: center;
+//           align-items: center;
+
+//           .socials__links {
+//             display: block;
+//             padding: 10px;
+
+//             &:focus {
+//               outline: $color-focus-outline;
+//               box-shadow: 5px 5px 10px $box-shadow;
+//             }
+//             &:active {
+//               background: $color-active;
+//             }
+
+//             img {
+//               width: 35px;
+//               height: auto;
+//             }
+//           }
+//         }
+//       }
+//     }
+
+//     .footer__contact {
+//       padding-top: 20px;
+
+//       .contact__text {
+//         color: $color-text-dark;
+//       }
+
+//       .contact__list {
+//         padding-left: 0;
+
+//         .list-item {
+//           width: 100%;
+
+//           .contact__links {
+//             display: block;
+//             color: $color-text-dark;
+
+//             &:focus {
+//               outline: $color-focus-outline;
+//               box-shadow: 5px 5px 10px $box-shadow;
+//             }
+
+//             &:active {
+//               background: $color-active;
+//               color: $color-active-font;
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+
+// // copyright
+
+// .aside__text {
+//   padding: 10px;
+//   font-family: $font;
+//   font-weight: 300;
+//   font-size: 0.8rem;
+//   text-align: center;
+//   color: $color-text-dark;
+// }

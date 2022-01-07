@@ -1,0 +1,208 @@
+//navbar
+
+// .nav {
+//   &__list {
+//     .nav__item {
+//       .nav__link {
+//         font-size: 1.5rem;
+//       }
+//     }
+//   }
+// }
+
+//stäng-kryss
+
+// .menu {
+//   .menu__burger--close {
+//     margin-left: 10%;
+//     padding-top: 10px;
+//   }
+
+//   .menu__close {
+//     font-size: 3rem;
+//     &:hover {
+//       transition: transform 0.2s ease-in;
+//       transform: rotate(180deg);
+//     }
+//   }
+// }
+
+// // kort med info om Cornelia
+
+.card {
+  flex-direction: row;
+  height: 100vh;
+
+  &__contentLeft {
+    max-width: 500px;
+    min-height: 55vh;
+    max-height: 60vh;
+    justify-content: space-between;
+
+    .card__title {
+      font-size: 2.5rem;
+    }
+
+    .cardBtnMail {
+      transition: z-index linear;
+
+      &:hover {
+        color: transparent;
+      }
+      &:focus {
+        &:active {
+          color: transparent;
+        }
+      }
+
+      .card__buttonFont {
+        transition: opacity 0s;
+        transition: z-index 0s;
+        transition: transform 0.3s;
+        &:active {
+          color: $color-active-font;
+        }
+      }
+      &:hover {
+        .card__buttonFont {
+          opacity: 1;
+          z-index: 5;
+          transform: rotate(360deg);
+        }
+      }
+    }
+
+    .card__list {
+      min-height: 10px;
+      max-height: 40px;
+      .card__item {
+        .card__link {
+          transition: all 0.3s;
+
+          &:hover {
+            background-color: $color-text-light;
+            color: #557848;
+          }
+        }
+      }
+    }
+  }
+
+  //   &__content--right {
+  //     max-width: 500px;
+  //     min-height: 55vh;
+  //     max-height: 60vh;
+
+  //     .card__img {
+  //       max-width: 300px;
+  //     }
+  //   }
+  // }
+
+  // // generella selektorer som är på flera element
+
+  // .header2 {
+  //   font-size: 2rem;
+  // }
+
+  // .header3 {
+  //   font-size: 1.6rem;
+  // }
+
+  // .list-item {
+  //   font-size: 1.3rem;
+  //   padding: 10px;
+  // }
+
+  // // sida 2
+  // // bakgrund
+
+  // .container__page2 {
+  //   .section-background {
+  //     .container__background {
+  //       max-width: 1000px;
+  //       min-width: 1000px;
+
+  //       .background-container__left {
+  //         height: 40%;
+
+  //         .article-background {
+  //           #article-background__text {
+  //             font-size: 1.3rem;
+  //           }
+  //         }
+  //       }
+  //       .background-container__right {
+  //         height: 40%;
+  //       }
+  //     }
+  //   }
+  // }
+
+  // //animation
+
+  // .flip {
+  //   font-size: 3.5rem;
+  // }
+
+  // // arbetslivserfarenhet och utbildning
+
+  // .section-work,
+  // .section-education {
+  //   .container__work,
+  //   .container__education {
+  //     max-width: 1000px;
+  //     min-width: 1000px;
+  //   }
+  // }
+
+  // // länk portfolio
+
+  // .aside__portfolio {
+  //   .link__portfolio {
+  //     font-size: 3.5rem;
+  //     transition: all 0.1s ease-in-out;
+  //     &:hover {
+  //       font-size: 3.7rem;
+  //       .arrow {
+  //         opacity: 1;
+  //       }
+  //     }
+  //   }
+  // }
+
+  // // quote-banner
+
+  // .banner-quote {
+  //   .banner__text--stretch {
+  //     font-size: 1rem;
+  //   }
+
+  //   .banner__footer--stretch {
+  //     font-size: 1rem;
+  //   }
+  // }
+
+  // // footer
+
+  // .footer-container2 {
+  //   max-width: 1000px;
+  //   min-width: 1000px;
+  // }
+
+  // .socials__list {
+  //   li {
+  //     .socials__links {
+  //       &:hover {
+  //         border: 2px solid $color-menu;
+  //       }
+  //     }
+  //   }
+  // }
+
+  // .contact__links {
+  //   &:hover {
+  //     font-size: 1.1rem;
+  //   }
+  // }
+}
