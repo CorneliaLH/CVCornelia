@@ -88,56 +88,55 @@
     }
   }
 
-  //   &__content--right {
-  //     max-width: 500px;
-  //     min-height: 55vh;
-  //     max-height: 60vh;
+  &__contentRight {
+    max-width: 500px;
+    min-height: 55vh;
+    max-height: 60vh;
 
-  //     .card__img {
-  //       max-width: 300px;
-  //     }
-  //   }
-  // }
+    .card__img {
+      max-width: 300px;
+    }
+  }
 
   // // generella selektorer som är på flera element
 
-  // .header2 {
-  //   font-size: 2rem;
-  // }
+  .header2 {
+    font-size: 1.8rem;
+  }
 
-  // .header3 {
-  //   font-size: 1.6rem;
-  // }
+  .header3 {
+    font-size: 1.6rem;
+  }
 
-  // .list-item {
-  //   font-size: 1.3rem;
-  //   padding: 10px;
-  // }
+  .listItem {
+    font-size: 1.3rem;
+    padding: 10px;
+  }
 
   // // sida 2
   // // bakgrund
 
-  // .container__page2 {
-  //   .section-background {
-  //     .container__background {
-  //       max-width: 1000px;
-  //       min-width: 1000px;
+  .container__page2 {
+    .sectionBackground {
+      .container__background {
+        max-width: 1000px;
+        min-width: 1000px;
 
-  //       .background-container__left {
-  //         height: 40%;
+        .backgroundContainer__left {
+          height: 40%;
 
-  //         .article-background {
-  //           #article-background__text {
-  //             font-size: 1.3rem;
-  //           }
-  //         }
-  //       }
-  //       .background-container__right {
-  //         height: 40%;
-  //       }
-  //     }
-  //   }
-  // }
+          .articleBackground {
+            #articleBackground__text {
+              font-size: 1.3rem;
+            }
+          }
+        }
+        .backgroundContainer__right {
+          height: 40%;
+        }
+      }
+    }
+  }
 
   // //animation
 
@@ -147,16 +146,16 @@
 
   // // arbetslivserfarenhet och utbildning
 
-  // .section-work,
-  // .section-education {
-  //   .container__work,
-  //   .container__education {
-  //     max-width: 1000px;
-  //     min-width: 1000px;
-  //   }
-  // }
+  .sectionWork,
+  .sectionEducation {
+    .container__work,
+    .container__education {
+      max-width: 1000px;
+      min-width: 1000px;
+    }
+  }
 
-  // // länk portfolio
+  // länk portfolio
 
   // .aside__portfolio {
   //   .link__portfolio {
@@ -171,38 +170,38 @@
   //   }
   // }
 
-  // // quote-banner
+  // quote-banner
 
-  // .banner-quote {
-  //   .banner__text--stretch {
-  //     font-size: 1rem;
-  //   }
+  .bannerQuote {
+    .banner__text-Stretch {
+      font-size: 1rem;
+    }
 
-  //   .banner__footer--stretch {
-  //     font-size: 1rem;
-  //   }
-  // }
+    .banner__footer-Stretch {
+      font-size: 1rem;
+    }
+  }
 
   // // footer
 
-  // .footer-container2 {
-  //   max-width: 1000px;
-  //   min-width: 1000px;
-  // }
+  .footerContainer2 {
+    max-width: 1000px;
+    min-width: 1000px;
+  }
 
-  // .socials__list {
-  //   li {
-  //     .socials__links {
-  //       &:hover {
-  //         border: 2px solid $color-menu;
-  //       }
-  //     }
-  //   }
-  // }
+  .socials__list {
+    li {
+      .socials__links {
+        &:hover {
+          border: 2px solid $color-menu;
+        }
+      }
+    }
+  }
 
-  // .contact__links {
-  //   &:hover {
-  //     font-size: 1.1rem;
-  //   }
-  // }
+  .contact__links {
+    &:hover {
+      font-size: 1.1rem;
+    }
+  }
 }
