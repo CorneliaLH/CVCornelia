@@ -675,6 +675,7 @@ body {
   background-color: #fafafa;
   opacity: 0.8;
   border-radius: 5px;
+  padding: 10px;
 }
 
 .container__page2 .sectionBackground .container__background .backgroundContainer__left {
