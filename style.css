@@ -343,7 +343,7 @@ template {
 
 body {
   height: 100%;
-  border: 60px solid rgba(138, 138, 138, 0.5);
+  border: 30px solid rgba(138, 138, 138, 0.5);
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url(./img/dark-green-plant-g32edfed8d_1920.jpg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(./img/dark-green-plant-g32edfed8d_1920.jpg);
   background-repeat: no-repeat;
@@ -980,6 +980,9 @@ body {
 }
 
 @media screen and (min-width: 768px) {
+  body {
+    border: 60px solid rgba(138, 138, 138, 0.5);
+  }
   .card {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
