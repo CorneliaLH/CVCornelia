@@ -59,7 +59,6 @@ for (let i = 0; i < menuArray.length; i++) {
   const aNav = document.createElement("a");
   aNav.classList = "nav__link";
   aNav.href = "#" + "navlista" + [i];
-  console.log(aNav.href);
   aNav.innerText = menuArray[i];
   ulNav.append(liNav);
   liNav.append(aNav);
@@ -114,7 +113,6 @@ let arrayCardLinks = [
   { name: "Portfolio", link: "#" },
 ];
 
-console.log(arrayCardLinks);
 const cardList = document.createElement("ul");
 cardList.classList = "card__list";
 divCardLeft.append(cardList);
@@ -430,13 +428,12 @@ fetch("https://api.github.com/users/CorneliaLH/repos")
         aPortfolio4.innerHTML = " Hemsidan";
         liPortfolio2.append(aPortfolio2, aPortfolio4);
         // }
-        console.log(portfolioOpen);
       } else if (portfolioOpen == true) {
         portfolioOpen = false;
       }
     }
   });
-console.log(portfolioOpen);
+
 //BANNER
 const bannerQuote = document.createElement("blockquote");
 bannerQuote.classList = "bannerQuote";
