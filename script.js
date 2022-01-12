@@ -377,62 +377,62 @@ workArray.forEach((element) => {
 
 //PORTFOLIO
 
-const containerPortfolio = document.createElement("div");
-containerPortfolio.classList = "sectionEducation";
-containerPage2.append(containerPortfolio);
+// const containerPortfolio = document.createElement("div");
+// containerPortfolio.classList = "sectionEducation";
+// containerPage2.append(containerPortfolio);
 
-const portfolio = document.createElement("div");
-containerPortfolio.append(portfolio);
-portfolio.classList = "header2 container__education";
-portfolio.id = "portfolio";
-portfolio.innerHTML = "Portfolio";
+// const portfolio = document.createElement("div");
+// containerPortfolio.append(portfolio);
+// portfolio.classList = "header2 container__education";
+// portfolio.id = "portfolio";
+// portfolio.innerHTML = "Portfolio";
 
-const ulPortfolio = document.createElement("ul");
-portfolio.append(ulPortfolio);
+// const ulPortfolio = document.createElement("ul");
+// portfolio.append(ulPortfolio);
 
-let portfolioOpen = false;
+// let portfolioOpen = false;
 
-fetch("https://api.github.com/users/CorneliaLH/repos")
-  .then(function (response) {
-    return response.json();
-  })
-  .then(function (json) {
-    containerPortfolio.addEventListener("click", showPages);
+// fetch("https://api.github.com/users/CorneliaLH/repos")
+//   .then(function (response) {
+//     return response.json();
+//   })
+//   .then(function (json) {
+//     containerPortfolio.addEventListener("click", showPages);
 
-    function showPages() {
-      ulPortfolio.innerHTML = "";
+//     function showPages() {
+//       ulPortfolio.innerHTML = "";
 
-      if (portfolioOpen == false) {
-        portfolioOpen = true;
-        // for (let i = 0; i < json.length; i++) {
-        let liPortfolio1 = document.createElement("li");
-        liPortfolio1.classList = "listItem";
-        ulPortfolio.append(liPortfolio1);
-        let aPortfolio1 = document.createElement("a");
-        aPortfolio1.innerHTML = "Repo: " + json[0].name;
-        aPortfolio1.href = json[0].html_url;
-        let aPortfolio3 = document.createElement("a");
-        aPortfolio3.href = "https://cornelialh.github.io/battleOfTheBots/";
-        aPortfolio3.innerHTML = " Hemsidan";
-        liPortfolio1.append(aPortfolio1, aPortfolio3);
+//       if (portfolioOpen == false) {
+//         portfolioOpen = true;
+//         // for (let i = 0; i < json.length; i++) {
+//         let liPortfolio1 = document.createElement("li");
+//         liPortfolio1.classList = "listItem";
+//         ulPortfolio.append(liPortfolio1);
+//         let aPortfolio1 = document.createElement("a");
+//         aPortfolio1.innerHTML = "Repo: " + json[0].name;
+//         aPortfolio1.href = json[0].html_url;
+//         let aPortfolio3 = document.createElement("a");
+//         aPortfolio3.href = "https://cornelialh.github.io/battleOfTheBots/";
+//         aPortfolio3.innerHTML = " Hemsidan";
+//         liPortfolio1.append(aPortfolio1, aPortfolio3);
 
-        let liPortfolio2 = document.createElement("li");
-        liPortfolio2.classList = "listItem";
-        ulPortfolio.append(liPortfolio2);
-        let aPortfolio2 = document.createElement("a");
-        aPortfolio2.innerHTML = "Repo: " + json[2].name;
-        aPortfolio2.href = json[2].html_url;
+//         let liPortfolio2 = document.createElement("li");
+//         liPortfolio2.classList = "listItem";
+//         ulPortfolio.append(liPortfolio2);
+//         let aPortfolio2 = document.createElement("a");
+//         aPortfolio2.innerHTML = "Repo: " + json[2].name;
+//         aPortfolio2.href = json[2].html_url;
 
-        let aPortfolio4 = document.createElement("a");
-        aPortfolio4.href = "https://cornelialh.github.io/CV/";
-        aPortfolio4.innerHTML = " Hemsidan";
-        liPortfolio2.append(aPortfolio2, aPortfolio4);
-        // }
-      } else if (portfolioOpen == true) {
-        portfolioOpen = false;
-      }
-    }
-  });
+//         let aPortfolio4 = document.createElement("a");
+//         aPortfolio4.href = "https://cornelialh.github.io/CV/";
+//         aPortfolio4.innerHTML = " Hemsidan";
+//         liPortfolio2.append(aPortfolio2, aPortfolio4);
+//         // }
+//       } else if (portfolioOpen == true) {
+//         portfolioOpen = false;
+//       }
+//     }
+//   });
 
 //BANNER
 const bannerQuote = document.createElement("blockquote");
