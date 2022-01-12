@@ -31,7 +31,7 @@
 
 .card {
   flex-direction: row;
-  height: 100vh;
+  height: 90vh;
 
   &__contentLeft {
     max-width: 500px;
@@ -97,111 +97,110 @@
       max-width: 300px;
     }
   }
+}
+// // generella selektorer som är på flera element
 
-  // // generella selektorer som är på flera element
+.header2 {
+  font-size: 1.8rem;
+}
 
-  .header2 {
-    font-size: 1.8rem;
-  }
+.header3 {
+  font-size: 1.6rem;
+}
 
-  .header3 {
-    font-size: 1.6rem;
-  }
+.listItem {
+  font-size: 1.3rem;
+  padding: 10px;
+}
 
-  .listItem {
-    font-size: 1.3rem;
-    padding: 10px;
-  }
+// // sida 2
+// // bakgrund
 
-  // // sida 2
-  // // bakgrund
+.container__page2 {
+  .sectionBackground {
+    .container__background {
+      max-width: 1000px;
+      min-width: 1000px;
 
-  .container__page2 {
-    .sectionBackground {
-      .container__background {
-        max-width: 1000px;
-        min-width: 1000px;
+      .backgroundContainer__left {
+        height: 40%;
 
-        .backgroundContainer__left {
-          height: 40%;
-
-          .articleBackground {
-            #articleBackground__text {
-              font-size: 1.3rem;
-            }
+        .articleBackground {
+          #articleBackground__text {
+            font-size: 1.3rem;
           }
         }
-        .backgroundContainer__right {
-          height: 40%;
-        }
+      }
+      .backgroundContainer__right {
+        height: 40%;
       }
     }
   }
+}
 
-  // //animation
+// //animation
 
-  // .flip {
-  //   font-size: 3.5rem;
-  // }
+// .flip {
+//   font-size: 3.5rem;
+// }
 
-  // // arbetslivserfarenhet och utbildning
+// // arbetslivserfarenhet och utbildning
 
-  .sectionWork,
-  .sectionEducation {
-    .container__work,
-    .container__education {
-      max-width: 1000px;
-      min-width: 1000px;
-    }
-  }
-
-  // länk portfolio
-
-  // .aside__portfolio {
-  //   .link__portfolio {
-  //     font-size: 3.5rem;
-  //     transition: all 0.1s ease-in-out;
-  //     &:hover {
-  //       font-size: 3.7rem;
-  //       .arrow {
-  //         opacity: 1;
-  //       }
-  //     }
-  //   }
-  // }
-
-  // quote-banner
-
-  .bannerQuote {
-    .banner__text-Stretch {
-      font-size: 1rem;
-    }
-
-    .banner__footer-Stretch {
-      font-size: 1rem;
-    }
-  }
-
-  // // footer
-
-  .footerContainer2 {
+.sectionWork,
+.sectionEducation {
+  .container__work,
+  .container__education {
     max-width: 1000px;
     min-width: 1000px;
   }
+}
 
-  .socials__list {
-    li {
-      .socials__links {
-        &:hover {
-          border: 2px solid $color-menu;
-        }
+// länk portfolio
+
+// .aside__portfolio {
+//   .link__portfolio {
+//     font-size: 3.5rem;
+//     transition: all 0.1s ease-in-out;
+//     &:hover {
+//       font-size: 3.7rem;
+//       .arrow {
+//         opacity: 1;
+//       }
+//     }
+//   }
+// }
+
+// quote-banner
+
+.bannerQuote {
+  .banner__text-Stretch {
+    font-size: 1rem;
+  }
+
+  .banner__footer-Stretch {
+    font-size: 1rem;
+  }
+}
+
+// // footer
+
+.footerContainer2 {
+  max-width: 1000px;
+  min-width: 1000px;
+}
+
+.socials__list {
+  li {
+    .socials__links {
+      &:hover {
+        border: 2px solid $color-menu;
       }
     }
   }
+}
 
-  .contact__links {
-    &:hover {
-      font-size: 1.1rem;
-    }
+.contact__links {
+  &:hover {
+    font-size: 1.1rem;
   }
 }

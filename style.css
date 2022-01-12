@@ -343,8 +343,9 @@ template {
 
 body {
   height: 100%;
-  border: 60px solid white;
-  background-image: url(../img/meadow-g575b47ff6_1920.jpg);
+  border: 60px solid rgba(138, 138, 138, 0.5);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url(../img/dark-green-plant-g32edfed8d_1920.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/dark-green-plant-g32edfed8d_1920.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left center;
@@ -441,7 +442,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #557848f5;
+  background-color: #364e34;
+  opacity: 0.9;
   width: 100%;
   top: 0;
   left: 0;
@@ -526,8 +528,8 @@ body {
   font-size: 6.3vw;
   margin-right: 10px;
   margin-left: 10px;
-  color: #557848;
-  text-shadow: 1px 1px 2px white, 0 0 1em white, 0 0 0.2em white;
+  color: #fafafa;
+  text-shadow: 2px 2px 2px #557848, 0 0 1em white, 0 0 0.2em white;
 }
 
 .card__contentLeft .cardBtnMail {
@@ -560,6 +562,7 @@ body {
   position: absolute;
   opacity: 0;
   font-size: 2rem;
+  font-weight: bold;
   color: #fafafa;
   top: 5px;
   left: 30px;
@@ -591,6 +594,7 @@ body {
   font-size: 1rem;
   color: #fafafa;
   font-family: "Open Sans", sans-serif;
+  font-weight: bold;
 }
 
 .card__contentLeft .card__list .card__item .card__link:focus {
@@ -620,8 +624,8 @@ body {
 }
 
 .card__contentRight .card__img {
-  -webkit-box-shadow: 5px 5px 5px #557848;
-          box-shadow: 5px 5px 5px #557848;
+  -webkit-box-shadow: 3px 3px 3px black;
+          box-shadow: 3px 3px 3px black;
   max-width: 220px;
   height: auto;
 }
@@ -669,7 +673,7 @@ body {
   max-width: 500px;
   height: 100%;
   background-color: #fafafa;
-  opacity: 0.7;
+  opacity: 0.8;
   border-radius: 5px;
 }
 
@@ -704,6 +708,7 @@ body {
   color: black;
   -ms-flex-preferred-size: 70%;
       flex-basis: 70%;
+  padding: 0;
 }
 
 .container__page2 .sectionBackground .container__background .backgroundContainer__right {
@@ -725,13 +730,12 @@ body {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .container__page2 .sectionBackground .container__background .backgroundContainer__right .articleSkills .articleSkills__list {
-  padding: 0;
   list-style-type: none;
 }
 
@@ -762,7 +766,7 @@ body {
 .sectionEducation .container__education {
   max-width: 500px;
   background-color: #fafafa;
-  opacity: 0.7;
+  opacity: 0.8;
   border-radius: 5px;
 }
 
@@ -804,7 +808,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: #557848;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -885,7 +888,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: #fafafa;
-  opacity: 0.7;
+  opacity: 0.8;
   border-radius: 5px;
   padding-left: 30px;
   padding-right: 30px;
@@ -1031,9 +1034,9 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     max-width: 760px;
     min-width: 760px;
   }
@@ -1142,7 +1145,7 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    height: 100vh;
+    height: 90vh;
   }
   .card__contentLeft {
     max-width: 500px;
@@ -1204,50 +1207,50 @@ body {
   .card__contentRight .card__img {
     max-width: 300px;
   }
-  .card .header2 {
+  .header2 {
     font-size: 1.8rem;
   }
-  .card .header3 {
+  .header3 {
     font-size: 1.6rem;
   }
-  .card .listItem {
+  .listItem {
     font-size: 1.3rem;
     padding: 10px;
   }
-  .card .container__page2 .sectionBackground .container__background {
+  .container__page2 .sectionBackground .container__background {
     max-width: 1000px;
     min-width: 1000px;
   }
-  .card .container__page2 .sectionBackground .container__background .backgroundContainer__left {
+  .container__page2 .sectionBackground .container__background .backgroundContainer__left {
     height: 40%;
   }
-  .card .container__page2 .sectionBackground .container__background .backgroundContainer__left .articleBackground #articleBackground__text {
+  .container__page2 .sectionBackground .container__background .backgroundContainer__left .articleBackground #articleBackground__text {
     font-size: 1.3rem;
   }
-  .card .container__page2 .sectionBackground .container__background .backgroundContainer__right {
+  .container__page2 .sectionBackground .container__background .backgroundContainer__right {
     height: 40%;
   }
-  .card .sectionWork .container__work,
-  .card .sectionWork .container__education,
-  .card .sectionEducation .container__work,
-  .card .sectionEducation .container__education {
+  .sectionWork .container__work,
+  .sectionWork .container__education,
+  .sectionEducation .container__work,
+  .sectionEducation .container__education {
     max-width: 1000px;
     min-width: 1000px;
   }
-  .card .bannerQuote .banner__text-Stretch {
+  .bannerQuote .banner__text-Stretch {
     font-size: 1rem;
   }
-  .card .bannerQuote .banner__footer-Stretch {
+  .bannerQuote .banner__footer-Stretch {
     font-size: 1rem;
   }
-  .card .footerContainer2 {
+  .footerContainer2 {
     max-width: 1000px;
     min-width: 1000px;
   }
-  .card .socials__list li .socials__links:hover {
+  .socials__list li .socials__links:hover {
     border: 2px solid #525564;
   }
-  .card .contact__links:hover {
+  .contact__links:hover {
     font-size: 1.1rem;
   }
 }

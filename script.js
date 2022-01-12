@@ -57,7 +57,8 @@ for (let i = 0; i < menuArray.length; i++) {
   liNav.classList = "nav__item";
   const aNav = document.createElement("a");
   aNav.classList = "nav__link";
-  aNav.href = "#";
+  aNav.href = "#" + "navlista" + [i];
+  console.log(aNav.href);
   aNav.innerText = menuArray[i];
   ulNav.append(liNav);
   liNav.append(aNav);
@@ -160,6 +161,7 @@ containerBackground.append(containerBackgroundLeft);
 
 const backgroundTitle1 = document.createElement("h2");
 backgroundTitle1.classList = "header2";
+backgroundTitle1.id = "navlista0";
 backgroundTitle1.innerText = "- Bakgrund";
 containerBackgroundLeft.append(backgroundTitle1);
 
@@ -185,11 +187,12 @@ backgroundArticle.append(backgroundParagraph);
 // SKILLS
 
 const containerBackgroundRight = document.createElement("div");
-containerBackgroundLeft.classList = "backgroundContainer__right";
+containerBackgroundRight.classList = "backgroundContainer__right";
 containerBackground.append(containerBackgroundRight);
 
 const skillsTitle1 = document.createElement("h2");
 skillsTitle1.classList = "header2";
+skillsTitle1.id = "navlista1";
 skillsTitle1.innerText = "- Färdigheter";
 containerBackgroundRight.append(skillsTitle1);
 
@@ -220,7 +223,7 @@ skillsArray.forEach((element) => {
 
 const sectionEducation = document.createElement("section");
 sectionEducation.classList = "sectionEducation";
-sectionEducation.id = "Utbildning0";
+
 containerPage2.append(sectionEducation);
 
 const containerEducation = document.createElement("div");
@@ -229,6 +232,7 @@ sectionEducation.append(containerEducation);
 
 const educationTitle1 = document.createElement("h2");
 educationTitle1.classList = "header2 education__title";
+educationTitle1.id = "navlista3";
 educationTitle1.innerText = "- Utbildning";
 containerEducation.append(educationTitle1);
 
@@ -303,7 +307,6 @@ educationArray.forEach((element) => {
 
 const sectionWork = document.createElement("section");
 sectionWork.classList = "sectionWork";
-sectionWork.id = "Utbildning0";
 containerPage2.append(sectionWork);
 
 const containerWork = document.createElement("div");
@@ -312,6 +315,7 @@ sectionWork.append(containerWork);
 
 const workTitle1 = document.createElement("h2");
 workTitle1.classList = "header2 education__title";
+workTitle1.id = "navlista2";
 workTitle1.innerText = "- Arbetslivserfarenhet";
 containerWork.append(workTitle1);
 
@@ -367,6 +371,67 @@ workArray.forEach((element) => {
   workList.append(workListItem1, workListItem2);
 });
 
+//PORTFOLIO
+
+const containerPortfolio = document.createElement("div");
+containerPortfolio.classList = "sectionEducation";
+containerPage2.append(containerPortfolio);
+
+const portfolio = document.createElement("div");
+containerPortfolio.append(portfolio);
+portfolio.classList = "header2 container__education";
+portfolio.id = "portfolio";
+portfolio.innerHTML = "Portfolio";
+
+const ulPortfolio = document.createElement("ul");
+portfolio.append(ulPortfolio);
+
+let portfolioOpen = false;
+
+fetch("https://api.github.com/users/CorneliaLH/repos")
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (json) {
+    containerPortfolio.addEventListener("click", showPages);
+
+    function showPages() {
+      ulPortfolio.innerHTML = "";
+
+      if (portfolioOpen == false) {
+        portfolioOpen = true;
+        // for (let i = 0; i < json.length; i++) {
+        let liPortfolio1 = document.createElement("li");
+        liPortfolio1.classList = "listItem";
+        ulPortfolio.append(liPortfolio1);
+        let aPortfolio1 = document.createElement("a");
+        aPortfolio1.innerHTML = "Repo: " + json[0].name;
+        aPortfolio1.href = json[0].html_url;
+        let aPortfolio3 = document.createElement("a");
+        aPortfolio3.href = "https://cornelialh.github.io/battleOfTheBots/";
+        aPortfolio3.innerHTML = " Hemsidan";
+        liPortfolio1.append(aPortfolio1, aPortfolio3);
+
+        let liPortfolio2 = document.createElement("li");
+        liPortfolio2.classList = "listItem";
+        ulPortfolio.append(liPortfolio2);
+        let aPortfolio2 = document.createElement("a");
+        aPortfolio2.innerHTML = "Repo: " + json[2].name;
+        aPortfolio2.href = json[2].html_url;
+
+        let aPortfolio4 = document.createElement("a");
+        aPortfolio4.href = "https://cornelialh.github.io/CV/";
+        aPortfolio4.innerHTML = " Hemsidan";
+        liPortfolio2.append(aPortfolio2, aPortfolio4);
+        // }
+        console.log(portfolioOpen);
+      } else if (portfolioOpen == true) {
+        portfolioOpen = false;
+      }
+    }
+  });
+console.log(portfolioOpen);
+//BANNER
 const bannerQuote = document.createElement("blockquote");
 bannerQuote.classList = "bannerQuote";
 
@@ -401,6 +466,7 @@ footerSocials.id = "socials";
 
 const socialsHeader = document.createElement("h2");
 socialsHeader.classList = "header2 socials__text";
+socialsHeader.id = "navlista4";
 socialsHeader.innerText = "- Socialt";
 
 const socialsList = document.createElement("ul");
@@ -447,6 +513,7 @@ footerContact.id = "contact";
 
 const contactTitle = document.createElement("h2");
 contactTitle.classList = "header2 contact__text";
+contactTitle.id = "navlista5";
 contactTitle.innerText = "- Kontakt";
 
 footerContainer2.append(footerContact);

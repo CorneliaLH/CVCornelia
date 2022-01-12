@@ -1,8 +1,9 @@
 // öppna-hamburgare
 body {
   height: 100%;
-  border: 60px solid white;
-  background-image: $color-background-dark;
+  border: 60px solid rgba(138, 138, 138, 0.5);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    $color-background-dark;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left center;
@@ -74,7 +75,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #557848f5;
+  background-color: #364e34;
+  opacity: 0.9;
   width: 100%;
   top: 0;
   left: 0;
@@ -131,8 +133,8 @@ body {
     font-size: 6.3vw;
     margin-right: 10px;
     margin-left: 10px;
-    color: #557848;
-    text-shadow: 1px 1px 2px white, 0 0 1em white, 0 0 0.2em white;
+    color: $color-text-light;
+    text-shadow: 2px 2px 2px #557848, 0 0 1em white, 0 0 0.2em white;
   }
 
   .cardBtnMail {
@@ -161,6 +163,7 @@ body {
       position: absolute;
       opacity: 0;
       font-size: 2rem;
+      font-weight: bold;
       color: $color-text-light;
       top: 5px;
       left: 30px;
@@ -184,6 +187,7 @@ body {
         font-size: 1rem;
         color: $color-text-light;
         font-family: $font;
+        font-weight: bold;
 
         &:focus {
           outline: $color-focus-outline;
@@ -208,7 +212,7 @@ body {
   height: auto;
 
   .card__img {
-    box-shadow: 5px 5px 5px #557848;
+    box-shadow: 3px 3px 3px black;
     max-width: 220px;
     height: auto;
   }
@@ -304,7 +308,7 @@ body {
       max-width: 500px;
       height: 100%;
       background-color: $color-background;
-      opacity: 0.7;
+      opacity: 0.8;
       border-radius: 5px;
 
       .backgroundContainer__left {
@@ -325,6 +329,7 @@ body {
             font-size: 0.9rem;
             color: $color-text-dark;
             flex-basis: 70%;
+            padding: 0;
           }
         }
       }
@@ -339,10 +344,9 @@ body {
           display: flex;
           flex-direction: column;
           align-items: start;
-          justify-content: start;
+          justify-content: center;
 
           .articleSkills__list {
-            padding: 0;
             list-style-type: none;
           }
         }
@@ -367,7 +371,7 @@ body {
   .container__education {
     max-width: 500px;
     background-color: $color-background;
-    opacity: 0.7;
+    opacity: 0.8;
     border-radius: 5px;
 
     .work__title,
@@ -426,7 +430,7 @@ body {
   display: flex;
   height: auto;
   flex-direction: column;
-  background-color: #557848;
+  // background-color: 364e34;
   justify-content: center;
   align-items: center;
   cursor: pointer;
@@ -480,7 +484,7 @@ body {
     display: flex;
     flex-direction: column;
     background-color: $color-background;
-    opacity: 0.7;
+    opacity: 0.8;
     border-radius: 5px;
     padding-left: 30px;
     padding-right: 30px;
