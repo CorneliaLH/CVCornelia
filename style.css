@@ -580,6 +580,7 @@ body {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  padding: 0;
 }
 
 .card__contentLeft .card__list .card__item {
