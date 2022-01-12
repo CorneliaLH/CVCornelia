@@ -622,6 +622,7 @@ body {
           align-items: center;
   padding-bottom: 50px;
   height: auto;
+  padding-bottom: 150px;
 }
 
 .card__contentRight .card__img {
