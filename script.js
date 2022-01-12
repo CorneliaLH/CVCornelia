@@ -44,6 +44,7 @@ ulNav.classList = "nav__list";
 nav.append(ulNav);
 
 let menuArray = [
+  "Home",
   "Bakgrund",
   "Färdigheter",
   "Arbetslivserfarenhet",
@@ -63,6 +64,12 @@ for (let i = 0; i < menuArray.length; i++) {
   ulNav.append(liNav);
   liNav.append(aNav);
 }
+
+ulNav.addEventListener("click", () => {
+  menuBtn.classList.remove("open");
+  nav.style.display = "none";
+  menuOpen = false;
+});
 
 //MAIN: Presentation Card with foto
 //LEFT side content
@@ -148,7 +155,6 @@ main.append(containerPage2);
 
 const sectionBackground = document.createElement("section");
 sectionBackground.classList = "sectionBackground";
-sectionBackground.id = "Bakgrund0";
 containerPage2.append(sectionBackground);
 
 const containerBackground = document.createElement("div");
@@ -161,7 +167,7 @@ containerBackground.append(containerBackgroundLeft);
 
 const backgroundTitle1 = document.createElement("h2");
 backgroundTitle1.classList = "header2";
-backgroundTitle1.id = "navlista0";
+backgroundTitle1.id = "navlista1";
 backgroundTitle1.innerText = "- Bakgrund";
 containerBackgroundLeft.append(backgroundTitle1);
 
@@ -192,7 +198,7 @@ containerBackground.append(containerBackgroundRight);
 
 const skillsTitle1 = document.createElement("h2");
 skillsTitle1.classList = "header2";
-skillsTitle1.id = "navlista1";
+skillsTitle1.id = "navlista2";
 skillsTitle1.innerText = "- Färdigheter";
 containerBackgroundRight.append(skillsTitle1);
 
@@ -232,7 +238,7 @@ sectionEducation.append(containerEducation);
 
 const educationTitle1 = document.createElement("h2");
 educationTitle1.classList = "header2 education__title";
-educationTitle1.id = "navlista3";
+educationTitle1.id = "navlista4";
 educationTitle1.innerText = "- Utbildning";
 containerEducation.append(educationTitle1);
 
@@ -315,7 +321,7 @@ sectionWork.append(containerWork);
 
 const workTitle1 = document.createElement("h2");
 workTitle1.classList = "header2 education__title";
-workTitle1.id = "navlista2";
+workTitle1.id = "navlista3";
 workTitle1.innerText = "- Arbetslivserfarenhet";
 containerWork.append(workTitle1);
 
@@ -466,7 +472,7 @@ footerSocials.id = "socials";
 
 const socialsHeader = document.createElement("h2");
 socialsHeader.classList = "header2 socials__text";
-socialsHeader.id = "navlista4";
+socialsHeader.id = "navlista5";
 socialsHeader.innerText = "- Socialt";
 
 const socialsList = document.createElement("ul");
@@ -513,7 +519,7 @@ footerContact.id = "contact";
 
 const contactTitle = document.createElement("h2");
 contactTitle.classList = "header2 contact__text";
-contactTitle.id = "navlista5";
+contactTitle.id = "navlista6";
 contactTitle.innerText = "- Kontakt";
 
 footerContainer2.append(footerContact);
