@@ -356,6 +356,19 @@ body {
   padding: 0;
 }
 
+.headerLanguageBtn {
+  background-color: #557848;
+  color: #fafafa;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  padding: 10px 10px 10px 10px;
+  cursor: pointer;
+  z-index: 0;
+  border-radius: 10%;
+  font-family: "Open Sans", sans-serif;
+}
+
 .menu {
   position: fixed;
   top: 0;
