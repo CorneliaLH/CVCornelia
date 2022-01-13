@@ -22,7 +22,7 @@ function startSite() {
   const divMenu = document.createElement("div");
   divMenu.classList = "menu__burger";
   divMenu.id = "menuButton";
-  divMenu.ariaLabel = "menuOpen";
+  divMenu.ariaLabel = "menu open";
   containerMenu.append(divMenu);
 
   //Open and Close menu
@@ -108,7 +108,7 @@ Front End utvecklare`;
   cardBtnMail.innerText = "Maila mig";
   divCardLeft.append(cardBtnMail);
 
-  const cardBtnFont = document.createElement("i");
+  let cardBtnFont = document.createElement("i");
   cardBtnFont.classList = "card__buttonFont far fa-envelope";
   cardBtnMail.append(cardBtnFont);
   // list for links on card left
@@ -581,7 +581,11 @@ the more you have.`;
   Front End developer`;
 
     cardBtnMail.ariaLabel = "Press to send e-mail to Cornelia";
-    cardBtnMail.innerText = "Mail me";
+    cardBtnMail.innerText = "E-mail me";
+
+    let cardBtnFont = document.createElement("i");
+    cardBtnFont.classList = "card__buttonFont far fa-envelope";
+    cardBtnMail.append(cardBtnFont);
 
     cardImg.alt = "Smiling Cornelia";
 
