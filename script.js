@@ -688,11 +688,11 @@ the more you have.`;
       },
       {
         title: "Workplace: Region Jämtland Härjedalen",
-        item1: "Ortodontist / From September 2018 until June 2020",
+        item1: "Orthodontist / From September 2018 until June 2020",
         item2: `Briefly about the role: Gained more experience of treatment with fixed appliances
         and with skeletal anchorage. I was also a supervisor
         for our dental hygienist in her thesis to
-        become a ortodontic assistent.`,
+        become a orthodontic assistent.`,
       },
       {
         title: `Frösöstrand public dental care`,
