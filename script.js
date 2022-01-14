@@ -577,7 +577,8 @@ the more you have.`;
       liNav.append(aNav);
     }
     h1Card.innerText = `Hi, my name is Cornelia,
-  I'm studying to become a 
+  I'm studying to 
+  become a 
   Front End developer`;
 
     cardBtnMail.ariaLabel = "Press to send e-mail to Cornelia";
