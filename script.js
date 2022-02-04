@@ -211,23 +211,102 @@ Front End utvecklare`;
   skillsArticle.id = "articleSkills";
   containerBackgroundRight.append(skillsArticle);
 
-  let skillsArticleHeader = document.createElement("h3");
-  skillsArticleHeader.classList = "header3 articleSkills__title";
-  skillsArticleHeader.innerText = "Jag beskrivs ofta som:";
-  skillsArticle.append(skillsArticleHeader);
+  let skillsBarContainer1 = document.createElement("div");
+  skillsBarContainer1.classList = "skillsBarContainer1";
+  skillsArticle.append(skillsBarContainer1);
 
-  const skillsList = document.createElement("ul");
-  skillsList.classList = "articleSkills__list";
-  skillsArticle.append(skillsList);
+  let arraySkills = [
+    {
+      heading: "HTML",
+      bar: "90",
+    },
+    {
+      heading: "CSS",
+      bar: "80",
+    },
+    {
+      heading: "Javascript",
+      bar: "50",
+    },
+    {
+      heading: "Angular",
+      bar: "10",
+    },
+  ];
 
-  let skillsArray = ["Strukturerad", "Pålitlig", "Hjälpsam"];
+  for (let i = 0; i < arraySkills.length; i++) {
+    let skillsBarContainer2 = document.createElement("div");
+    skillsBarContainer2.classList = "skillsBarContainer2";
+    let headingSkills = document.createElement("h4");
+    headingSkills.innerText = arraySkills[i].heading;
+    let skillsBar1 = document.createElement("div");
+    skillsBar1.classList = "progress";
+    let skillsBar2 = document.createElement("div");
+    skillsBar2.classList = "progress-bar";
+    skillsBar2.dataProgress = arraySkills[i].bar;
+    let bar = document.createElement("span");
+    bar.innerText = arraySkills[i].bar + "%";
+    skillsBar2.classList.add("progress-bar" + [i]);
+    skillsBarContainer1.append(skillsBarContainer2);
+    skillsBarContainer2.append(headingSkills, skillsBar1);
+    skillsBar1.append(skillsBar2);
+    skillsBar2.append(bar);
+  }
 
-  skillsArray.forEach((element) => {
-    let skillsArrayItem = document.createElement("li");
-    skillsArrayItem.classList = "listItem";
-    skillsArrayItem.innerText = element;
-    skillsList.append(skillsArrayItem);
+  const progressBars = document.querySelectorAll(".progress-bar");
+
+  function showProgress() {
+    for (let u = 0; u < arraySkills.length; u++) {
+      document.querySelector(".progress-bar" + [u]).style.opacity = 1;
+      document.querySelector(
+        ".progress-bar" + [u]
+      ).style.width = `${arraySkills[u].bar}%`;
+      document.querySelector(".progress-bar" + [u]).style.transition = "all 2s";
+    }
+  }
+
+  function hideProgress() {
+    for (let o = 0; o < arraySkills.length; o++) {
+      document.querySelector(".progress-bar" + [o]).style.opacity = 0;
+      document.querySelector(".progress-bar" + [o]).style.width = 0;
+    }
+
+    //   progressBars.forEach((p) => {
+    //     p.style.opacity = 0;
+    //     p.style.width = 0;
+    //   });
+  }
+
+  window.addEventListener("scroll", () => {
+    const sectionPos = skillsBarContainer1.getBoundingClientRect().top;
+    const screenPos = window.innerHeight / 2;
+
+    if (sectionPos < screenPos) {
+      console.log("hej");
+      showProgress();
+    } else {
+      console.log("hå");
+      hideProgress();
+    }
   });
+
+  // let skillsArticleHeader = document.createElement("h3");
+  // skillsArticleHeader.classList = "header3 articleSkills__title";
+  // skillsArticleHeader.innerText = "Jag beskrivs ofta som:";
+  // skillsArticle.append(skillsArticleHeader);
+
+  // const skillsList = document.createElement("ul");
+  // skillsList.classList = "articleSkills__list";
+  // skillsArticle.append(skillsList);
+
+  // let skillsArray = ["Strukturerad", "Pålitlig", "Lösningsorienterad"];
+
+  // skillsArray.forEach((element) => {
+  //   let skillsArrayItem = document.createElement("li");
+  //   skillsArrayItem.classList = "listItem";
+  //   skillsArrayItem.innerText = element;
+  //   skillsList.append(skillsArrayItem);
+  // });
 
   //UTBILDNING
 
@@ -579,16 +658,16 @@ the more you have.`;
     challenges.`;
 
     skillsTitle1.innerText = "- Skills";
-    skillsArticleHeader.innerText = "I am often described as:";
+    // skillsArticleHeader.innerText = "I am often described as:";
 
-    skillsList.innerHTML = "";
-    skillsArray = ["Structured", "Reliable", "Helpful"];
-    skillsArray.forEach((element) => {
-      const skillsArrayItem = document.createElement("li");
-      skillsArrayItem.classList = "listItem";
-      skillsArrayItem.innerText = element;
-      skillsList.append(skillsArrayItem);
-    });
+    // skillsList.innerHTML = "";
+    // skillsArray = ["Structured", "Reliable", "Solution-oriented"];
+    // skillsArray.forEach((element) => {
+    //   const skillsArrayItem = document.createElement("li");
+    //   skillsArrayItem.classList = "listItem";
+    //   skillsArrayItem.innerText = element;
+    //   skillsList.append(skillsArrayItem);
+    // });
 
     educationTitle1.innerText = "- Education";
     educationArticle.innerHTML = "";
