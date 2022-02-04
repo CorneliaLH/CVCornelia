@@ -793,8 +793,8 @@ h4 {
   height: 18px;
   background-color: #b1afaf;
   border-radius: 10px;
-  -webkit-box-shadow: 2px 2px 5px white;
-          box-shadow: 2px 2px 5px white;
+  -webkit-box-shadow: 2px 2px 5px black;
+          box-shadow: 2px 2px 5px black;
 }
 
 .progress-bar {
