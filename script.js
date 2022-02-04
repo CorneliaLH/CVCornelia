@@ -270,11 +270,6 @@ Front End utvecklare`;
       document.querySelector(".progress-bar" + [o]).style.opacity = 0;
       document.querySelector(".progress-bar" + [o]).style.width = 0;
     }
-
-    //   progressBars.forEach((p) => {
-    //     p.style.opacity = 0;
-    //     p.style.width = 0;
-    //   });
   }
 
   window.addEventListener("scroll", () => {
