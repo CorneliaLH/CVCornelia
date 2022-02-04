@@ -191,10 +191,7 @@ Front End utvecklare`;
   let backgroundParagraph = document.createElement("p");
   backgroundParagraph.classList = "listItem articleBackground__text";
   backgroundParagraph.id = "articleBackground__text";
-  backgroundParagraph.innerText = `Programmering har alltid varit ett intresse som jag nu ser
-fram emot att ha som karriär. Jag har tidigare arbetat som
-specialisttandläkare inom ortodonti och är nu redo för nya
-utmaningar.`;
+  backgroundParagraph.innerText = `Programmering har alltid varit ett intresse som jag nu ser fram emot att ha som karriär. Jag har tidigare arbetat som specialisttandläkare inom ortodonti och är nu redo för nya utmaningar.`;
   backgroundArticle.append(backgroundParagraph);
 
   // SKILLS
@@ -257,29 +254,19 @@ utmaningar.`;
   let educationArray = [
     {
       title: "Front End developer",
-      item1: `Medieinstitutet Yrkeshögskola / Från oktober 2021 med
-  förväntad examen maj 2023`,
-      item2: `Utbildningen Front End Developer ger kompetens att använda
-  den webbteknik som krävs för att producera avancerade
-  webbplatser. Allt från JavaScript, versionshantering,
-  ramverk, html, CSS, webbdesign och användbarhet/UX.
-  Utbildningen inkluderar allt från programmeringsspråk till
-  kunskaper i utveckling av mobila webbapplikationer.`,
+      item1: `Medieinstitutet Yrkeshögskola / Från oktober 2021 med förväntad examen maj 2023`,
+      item2: `Utbildningen Front End Developer ger kompetens att använda den webbteknik som krävs för att producera avancerade webbplatser. Allt från JavaScript, versionshantering, ramverk, html, CSS, webbdesign och användbarhet/UX.
+      Utbildningen inkluderar allt från programmeringsspråk tillkunskaper i utveckling av mobila webbapplikationer.`,
     },
     {
       title: "Specialisttandläkarutbildning tandreglering",
       item1: "Köpenhamns universitet / Från september 2013 till oktober 2016",
-      item2: `Utbildningen omfattar både klinisk och teoretisk
-  undervisning, praktik, obligatoriska kurser samt avslutande
-  examination. Utbildnignen har även medfört att jag nästan är
-  flytande i tal och skrift i det danska språket.`,
+      item2: `Utbildningen omfattar både klinisk och teoretisk undervisning, praktik, obligatoriska kurser samt avslutande examination. Utbildnignen har även medfört att jag nästan är flytande i tal och skrift i det danska språket.`,
     },
     {
       title: `Tandläkarutbildning`,
       item1: "Malmö högskola / Från oktober 2005 till juni 2010",
-      item2: `Tandläkarutbildningen bedrevs enligt PBL, problembaserat
-  lärande, vilket innebär att studierna baseras på fallstudier
-  och problemlösning.`,
+      item2: `Tandläkarutbildningen bedrevs enligt PBL, problembaserat lärande, vilket innebär att studierna baseras på fallstudier och problemlösning.`,
     },
     {
       title: `Engelska A`,
@@ -341,19 +328,12 @@ utmaningar.`;
     {
       title: "Arbetsplats: Köpenhamns Kommun",
       item1: `Specialisttandläkare / Från augusti 2020 till april 2021`,
-      item2: `Kort om rollen: Rollen innebär stor erfarenhet av teamarbete
-    och delegering. Arbetade kommunalt i Köpenhamns kommun med
-    ortodontisk behandling av barn och ungdomar. Behandlingarna
-    inkluderar både avtagbar apparatur och fast apparatur
-    inklusive behandlingar med skeletal förankring.`,
+      item2: `Kort om rollen: Rollen innebär stor erfarenhet av teamarbete och delegering. Arbetade kommunalt i Köpenhamns kommun med ortodontisk behandling av barn och ungdomar. Behandlingarna inkluderar både avtagbar apparatur och fast apparatur inklusive behandlingar med skeletal förankring.`,
     },
     {
       title: "Arbetsplats: Region Jämtland Härjedalen",
       item1: "Specialisttandläkare / Från september 2018 till juni 2020",
-      item2: `Kort om rollen: Fått erfarenhet av behandling med fast
-    apparatur och med skeletal förankring samt varit handledare
-    för vår tandhygienist i hennes examensarbete till
-    ort-assistent utbildningen.`,
+      item2: `Kort om rollen: Fått erfarenhet av behandling med fast apparatur och med skeletal förankring samt varit handledare för vår tandhygienist i hennes examensarbete till ort-assistent utbildningen.`,
     },
     {
       title: `Frösöstrand Folktandvård`,

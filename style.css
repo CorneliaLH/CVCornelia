@@ -1105,14 +1105,14 @@ body {
         flex-basis: 50%;
     padding: 20px;
   }
-  .sectionWork .container__work .work__container,
-  .sectionWork .container__work .education__container,
-  .sectionWork .container__education .work__container,
-  .sectionWork .container__education .education__container,
-  .sectionEducation .container__work .work__container,
-  .sectionEducation .container__work .education__container,
-  .sectionEducation .container__education .work__container,
-  .sectionEducation .container__education .education__container {
+  .sectionWork .container__work .articleWork,
+  .sectionWork .container__work .articleEducation,
+  .sectionWork .container__education .articleWork,
+  .sectionWork .container__education .articleEducation,
+  .sectionEducation .container__work .articleWork,
+  .sectionEducation .container__work .articleEducation,
+  .sectionEducation .container__education .articleWork,
+  .sectionEducation .container__education .articleEducation {
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
     padding: 20px;

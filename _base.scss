@@ -263,55 +263,6 @@ body {
 // // sida 2
 
 .container__page2 {
-  //   box-sizing: border-box;
-  //   height: 100%;
-  //   //   background-image: $color-background-dark;
-  //   //   background-repeat: no-repeat;
-  //   //   background-size: cover;
-  //   //   background-position: left center;
-  //   //   background-attachment: local;
-  // }
-
-  // // animation med font awesome iconer
-
-  // .animation__fontawesome {
-  //   width: 100%;
-  //   padding-top: 10px;
-  //   padding-bottom: 10px;
-  //   height: 4%;
-  //   overflow: hidden;
-
-  //   .animation__container {
-  //     display: flex;
-  //     flex-direction: row;
-  //     align-items: center;
-  //     justify-content: space-between;
-  //     padding-left: 30px;
-  //     padding-right: 30px;
-
-  //     .icon__fontawesome {
-  //       margin-left: 0;
-
-  //       .flip {
-  //         animation: flip 2s infinite;
-  //         color: $color-menu;
-  //         padding-right: 5px;
-  //         text-shadow: 2px 2px 2px black;
-  //         font-size: 2rem;
-  //       }
-  //     }
-  //   }
-  // }
-
-  // @keyframes flip {
-  //   from {
-  //     transform: rotateY(0deg);
-  //   }
-  //   to {
-  //     transform: rotateY(360deg);
-  //   }
-  // }
-
   // // bakgrund
 
   .sectionBackground {
@@ -411,37 +362,6 @@ body {
 }
 
 // länk till portfolio (senare ska det vara nån typ av karusell eller annat kul sätt att visa fram portfolion.)
-
-// .aside__portfolio {
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   height: 12vh;
-//   padding-bottom: 20px;
-
-//   .link__portfolio {
-//     width: 70%;
-//     text-align: center;
-//     font-family: $font;
-//     font-weight: 600;
-//     letter-spacing: 0.7rem;
-//     font-size: 8vw;
-//     color: $color-menu;
-//     text-shadow: 3px 3px 3px $color-text-dark;
-
-//     &:focus {
-//       outline: $color-focus-outline;
-//       box-shadow: 5px 5px 10px $box-shadow;
-//     }
-//     &:active {
-//       background: $color-active;
-//       color: $color-active-font;
-//     }
-//     .arrow {
-//       opacity: 0;
-//     }
-//   }
-// }
 
 // // quote med banner och animation
 
