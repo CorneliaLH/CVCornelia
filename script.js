@@ -229,6 +229,10 @@ Front End utvecklare`;
       bar: "50",
     },
     {
+      heading: "Typescript",
+      bar: "40",
+    },
+    {
       heading: "Angular",
       bar: "10",
     },
@@ -439,10 +443,144 @@ Front End utvecklare`;
   });
 
   //PORTFOLIO
+  const containerPortfolio = document.createElement("div");
+  containerPortfolio.classList = "sectionPortfolio";
+  containerPage2.append(containerPortfolio);
 
-  // const containerPortfolio = document.createElement("div");
-  // containerPortfolio.classList = "sectionEducation";
-  // containerPage2.append(containerPortfolio);
+  const headingPortfolio = document.createElement("h1");
+  headingPortfolio.innerText = "Portfolio";
+  headingPortfolio.classList = "headingPortfolio";
+
+  containerPortfolio.append(headingPortfolio);
+  let fill = document.createElement("div");
+  fill.classList = "slider";
+  containerPortfolio.append(fill);
+
+  let slides = document.createElement("div");
+  slides.classList = "slides";
+
+  fill.append(slides);
+  // let input1 = document.createElement("input")
+  // input1.id = "radio1"
+  // input1.type = "radio"
+  // input1.name = "radio-btn"
+
+  // let input2 = document.createElement("input")
+  // input2.id = "radio2"
+  // input2.type = "radio"
+  // input1.name = "radio-btn"
+
+  // let input3 = document.createElement("input")
+  // input3.id = "radio3"
+  // input3.type = "radio"
+  // input1.name = "radio-btn"
+
+  // let input4 = document.createElement("input")
+  // input4.id = "radio4"
+  // input4.type = "radio"
+  // input1.name = "radio-btn"
+
+  let radioArray1 = [
+    {
+      id: "radio1",
+      type: "radio",
+      name: "radio-btn",
+    },
+    {
+      id: "radio2",
+      type: "radio",
+      name: "radio-btn",
+    },
+    {
+      id: "radio3",
+      type: "radio",
+      name: "radio-btn",
+    },
+    {
+      id: "radio4",
+      type: "radio",
+      name: "radio-btn",
+    },
+  ];
+
+  for (let q = 0; q < radioArray1.length; q++) {
+    let input = document.createElement("input");
+    input.id = radioArray1[q].id;
+    input.type = radioArray1[q].type;
+    input.name = radioArray1[q].name;
+    slides.append(input);
+  }
+
+  let slideFirst = document.createElement("div");
+  slideFirst.classList = "slide first";
+
+  let image = document.createElement("img");
+  image.src = "/img/img1.png";
+  image.classList = "imageSlider";
+
+  slides.append(slideFirst);
+  slideFirst.append(image);
+
+  let slideArray = [
+    {
+      src: "/img/img2.png",
+    },
+    {
+      src: "/img/img3.png",
+    },
+  ];
+
+  for (let y = 0; y < slideArray.length; y++) {
+    let slide = document.createElement("div");
+    slide.classList = "slide";
+    let image1 = document.createElement("img");
+    image1.src = slideArray[y].src;
+    image1.classList = "imageSlider";
+    slides.append(slide);
+    slide.append(image1);
+  }
+
+  let navigationAuto = document.createElement("div");
+  navigationAuto.classList = "navigation-auto";
+  slides.append(navigationAuto);
+
+  let buttonArray = [
+    { name: "auto-btn1" },
+    { name: "auto-btn2" },
+    { name: "auto-btn3" },
+  ];
+
+  for (let p = 0; p < buttonArray.length; p++) {
+    let autoBtn = document.createElement("div");
+    autoBtn.classList = buttonArray[p].name;
+    navigationAuto.append(autoBtn);
+  }
+
+  let navigationManual = document.createElement("div");
+  navigationManual.classList = "navigation-manual";
+  fill.append(navigationManual);
+
+  let radioArray2 = [
+    { for: "radio1", class: "manual-btn" },
+    { for: "radio2", class: "manual-btn" },
+    { for: "radio3", class: "manual-btn" },
+  ];
+
+  for (let n = 0; n < radioArray2.length; n++) {
+    let label = document.createElement("label");
+    label.htmlFor = radioArray2[n].for;
+    label.classList = radioArray2[n].class;
+    navigationManual.append(label);
+  }
+
+  let counter = 1;
+  setInterval(function () {
+    document.getElementById("radio" + counter).checked = true;
+    counter++;
+    if (counter > 3) {
+      counter = 1;
+    }
+  }, 5000);
 
   // const portfolio = document.createElement("div");
   // containerPortfolio.append(portfolio);

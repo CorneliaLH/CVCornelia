@@ -303,23 +303,23 @@ body {
         }
       }
 
-      .backgroundContainer__right {
-        flex-basis: 90%;
-        max-width: 500px;
-        padding: 20px;
-        height: auto;
+      // .backgroundContainer__right {
+      //   flex-basis: 90%;
+      //   max-width: 500px;
+      //   padding: 20px;
+      //   height: auto;
 
-        .articleSkills {
-          display: flex;
-          flex-direction: column;
-          align-items: start;
-          justify-content: center;
+      //   .articleSkills {
+      //     display: flex;
+      //     flex-direction: column;
+      //     align-items: start;
+      //     justify-content: center;
 
-          .articleSkills__list {
-            list-style-type: none;
-          }
-        }
-      }
+      //     .articleSkills__list {
+      //       list-style-type: none;
+      //     }
+      //   }
+      // }
     }
   }
 }
@@ -333,46 +333,57 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
 
-.skillsBarContainer2 {
-  width: 100%;
-}
+  .skillsBarContainer2 {
+    width: 100%;
 
-h4 {
-  width: 50%;
-  font-family: $font;
-  font-weight: 300;
-  font-style: italic;
+    h4 {
+      width: 50%;
+      font-family: $font;
+      font-weight: 300;
+      font-style: italic;
+    }
+  }
 }
 
 .progress {
   width: 100%;
   height: 18px;
-  background-color: rgb(177, 175, 175);
+
+  background: rgb(134, 118, 118);
+  background: linear-gradient(
+    180deg,
+    rgba(134, 118, 118, 1) 0%,
+    rgba(88, 60, 60, 1) 47%,
+    rgba(134, 118, 118, 1) 75%
+  );
   border-radius: 10px;
   box-shadow: 2px 2px 5px black;
-}
 
-.progress-bar {
-  box-shadow: 2px 2px 5px white;
-}
+  .progress-bar {
+    box-shadow: 2px 2px 5px white;
+    width: 90%;
+    height: 100%;
 
-.progress-bar span {
-  position: absolute;
-  top: 0;
-  right: 0;
-  color: white;
-  text-shadow: 2px 2px 2px black;
-  padding-right: 10px;
-}
-.progress .progress-bar {
-  width: 90%;
-  height: 100%;
-  background-color: rebeccapurple;
-  opacity: 0.6;
-  border-radius: 10px;
-  position: relative;
+    background: rgb(102, 51, 153);
+    background: linear-gradient(
+      180deg,
+      rgba(102, 51, 153, 1) 22%,
+      rgba(132, 120, 144, 1) 47%,
+      rgba(102, 51, 153, 1) 66%
+    );
+    opacity: 0.6;
+    border-radius: 10px;
+    position: relative;
+    span {
+      position: absolute;
+      top: 0;
+      right: 0;
+      color: white;
+      text-shadow: 2px 2px 2px black;
+      padding-right: 10px;
+    }
+  }
 }
 
 // // arbetslivserfarenhet och utbildning
@@ -413,6 +424,105 @@ h4 {
 }
 
 // länk till portfolio (senare ska det vara nån typ av karusell eller annat kul sätt att visa fram portfolion.)
+.headingPortfolio {
+  font-family: $font;
+  color: $color-text-light;
+  text-align: center;
+  font-size: 2.5rem;
+  margin-top: 50px;
+}
+.slider {
+  width: 100vw;
+  overflow: hidden;
+
+  .slides {
+    width: 500%;
+    height: 800px;
+    display: flex;
+
+    input {
+      display: none;
+    }
+
+    .slide {
+      width: 20%;
+      transition: 2s;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .imageSlider {
+        opacity: 0.9;
+        width: 600px;
+        height: auto;
+        border: 30px solid rgba(138, 138, 138, 0.5);
+      }
+    }
+  }
+}
+
+.navigation-manual {
+  position: absolute;
+  width: 100vw;
+  margin-top: -140px;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn {
+  border: 2px solid green;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+  margin-right: 40px;
+}
+
+.manual-btn:hover {
+  background: grey;
+}
+
+#radio1:checked ~ .first {
+  margin-left: 0;
+}
+#radio2:checked ~ .first {
+  margin-left: -20%;
+}
+#radio3:checked ~ .first {
+  margin-left: -40%;
+}
+
+.navigation-auto {
+  position: absolute;
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  margin-top: 660px;
+}
+
+.navigation-auto div {
+  border: 2px solid green;
+  padding: 5px;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+.navigation-auto div:not(:last-child) {
+  margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1 {
+  background: grey;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2 {
+  background: grey;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3 {
+  background: grey;
+}
 
 // // quote med banner och animation
 
