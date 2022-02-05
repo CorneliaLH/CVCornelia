@@ -747,6 +747,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 20px;
 }
 
 .skillsBarContainer1 .skillsBarContainer2 {
@@ -896,7 +897,7 @@ body {
 
 .slider .slides .slide .imageSlider {
   opacity: 0.9;
-  width: 600px;
+  width: 800px;
   height: auto;
   border: 30px solid rgba(138, 138, 138, 0.5);
 }
@@ -904,7 +905,7 @@ body {
 .navigation-manual {
   position: absolute;
   width: 100vw;
-  margin-top: -140px;
+  margin-top: -200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -951,7 +952,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 660px;
+  margin-top: 600px;
 }
 
 .navigation-auto div {

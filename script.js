@@ -515,7 +515,7 @@ Front End utvecklare`;
   slideFirst.classList = "slide first";
 
   let image = document.createElement("img");
-  image.src = "img/img1.png";
+  image.src = "img/img1.jpg";
   image.classList = "imageSlider";
 
   slides.append(slideFirst);
@@ -523,10 +523,10 @@ Front End utvecklare`;
 
   let slideArray = [
     {
-      src: "img/img2.png",
+      src: "img/img2.jpg",
     },
     {
-      src: "img/img3.png",
+      src: "img/img3.jpg",
     },
   ];
 
