@@ -429,15 +429,13 @@ body {
   font-family: $font;
   color: $color-text-light;
   text-align: center;
-  font-size: 2.5rem;
-  margin-top: 50px;
 }
 .slider {
-  width: 100vw;
+  width: 95vw;
   overflow: hidden;
 
   .slides {
-    width: 500%;
+    width: 500vw;
     height: 800px;
     display: flex;
 
@@ -453,9 +451,9 @@ body {
       align-items: center;
       .imageSlider {
         opacity: 0.9;
-        width: 800px;
+        width: 50vw;
         height: auto;
-        border: 30px solid rgba(138, 138, 138, 0.5);
+        border: 20px solid rgba(138, 138, 138, 0.5);
       }
     }
   }
@@ -464,14 +462,14 @@ body {
 .navigation-manual {
   position: absolute;
   width: 100vw;
-  margin-top: -200px;
+  margin-top: -140px;
   display: flex;
   justify-content: center;
 }
 
 .manual-btn {
-  border: 2px solid green;
-  padding: 5px;
+  outline: 2px solid green;
+  // padding: 5px;
   border-radius: 10px;
   cursor: pointer;
   transition: 1s;
@@ -500,12 +498,12 @@ body {
   display: flex;
   width: 100vw;
   justify-content: center;
-  margin-top: 600px;
+  margin-top: 660px;
 }
 
 .navigation-auto div {
-  border: 2px solid green;
-  padding: 5px;
+  outline: 2px solid green;
+  // padding: 5px;
   border-radius: 10px;
   transition: 1s;
 }

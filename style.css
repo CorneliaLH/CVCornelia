@@ -859,17 +859,15 @@ body {
   font-family: "Open Sans", sans-serif;
   color: #fafafa;
   text-align: center;
-  font-size: 2.5rem;
-  margin-top: 50px;
 }
 
 .slider {
-  width: 100vw;
+  width: 95vw;
   overflow: hidden;
 }
 
 .slider .slides {
-  width: 500%;
+  width: 500vw;
   height: 800px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -897,15 +895,15 @@ body {
 
 .slider .slides .slide .imageSlider {
   opacity: 0.9;
-  width: 800px;
+  width: 50vw;
   height: auto;
-  border: 30px solid rgba(138, 138, 138, 0.5);
+  border: 20px solid rgba(138, 138, 138, 0.5);
 }
 
 .navigation-manual {
   position: absolute;
   width: 100vw;
-  margin-top: -200px;
+  margin-top: -140px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -915,8 +913,7 @@ body {
 }
 
 .manual-btn {
-  border: 2px solid green;
-  padding: 5px;
+  outline: 2px solid green;
   border-radius: 10px;
   cursor: pointer;
   -webkit-transition: 1s;
@@ -952,12 +949,11 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 600px;
+  margin-top: 660px;
 }
 
 .navigation-auto div {
-  border: 2px solid green;
-  padding: 5px;
+  outline: 2px solid green;
   border-radius: 10px;
   -webkit-transition: 1s;
   transition: 1s;
